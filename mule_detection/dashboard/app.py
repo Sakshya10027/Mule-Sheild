@@ -99,12 +99,25 @@ def page_overview(alerts):
                              'SAFE': '#2ca02c'
                          },
                          hole=0.4)
+        fig_pie.update_layout(
+            plot_bgcolor='rgba(0,0,0,0)',
+            paper_bgcolor='rgba(0,0,0,0)',
+            font_color="white",
+            legend=dict(font=dict(color="white"))
+        )
         st.plotly_chart(fig_pie, width='stretch')
 
     with col2:
         st.subheader("Risk Score Distribution")
         fig_hist = px.histogram(alerts, x='risk_score', nbins=50, 
-                               color_discrete_sequence=['#0A1628'])
+                               color_discrete_sequence=['#FFD700']) # Use Gold for better visibility
+        fig_hist.update_layout(
+            plot_bgcolor='rgba(0,0,0,0)',
+            paper_bgcolor='rgba(0,0,0,0)',
+            font_color="white",
+            xaxis=dict(showgrid=False),
+            yaxis=dict(showgrid=True, gridcolor='gray')
+        )
         st.plotly_chart(fig_hist, width='stretch')
 
     st.subheader("Model Performance Visuals")
@@ -144,6 +157,10 @@ def page_lookup(alerts, X_test):
                     ],
                 }
             ))
+            fig.update_layout(
+                paper_bgcolor='rgba(0,0,0,0)',
+                font_color="white"
+            )
             st.plotly_chart(fig, width='stretch')
             
             st.info(f"**Recommended Action:** {row['recommended_action']}")
@@ -155,7 +172,14 @@ def page_lookup(alerts, X_test):
             
             fig_bar = px.bar(x=values, y=features, orientation='h', 
                             labels={'x': 'SHAP Value', 'y': 'Feature'},
-                            color=values, color_continuous_scale='RdYlGn_r')
+                            color=values, color_discrete_sequence=['#FFD700'])
+            fig_bar.update_layout(
+                plot_bgcolor='rgba(0,0,0,0)',
+                paper_bgcolor='rgba(0,0,0,0)',
+                font_color="white",
+                xaxis=dict(showgrid=True, gridcolor='gray'),
+                yaxis=dict(showgrid=False)
+            )
             st.plotly_chart(fig_bar, width='stretch')
 
 def page_alerts(alerts):
