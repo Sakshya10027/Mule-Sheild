@@ -123,11 +123,11 @@ def page_overview(alerts):
     st.subheader("Model Performance Visuals")
     p1, p2, p3 = st.columns(3)
     if os.path.exists(os.path.join(PLOTS_DIR, "confusion_matrix_xgboost.png")):
-        p1.image(os.path.join(PLOTS_DIR, "confusion_matrix_xgboost.png"), caption="Confusion Matrix")
+        p1.image(os.path.join(PLOTS_DIR, "confusion_matrix_xgboost.png"), caption="Confusion Matrix", use_container_width=True)
     if os.path.exists(os.path.join(PLOTS_DIR, "roc_curves.png")):
-        p2.image(os.path.join(PLOTS_DIR, "roc_curves.png"), caption="ROC Curves")
+        p2.image(os.path.join(PLOTS_DIR, "roc_curves.png"), caption="ROC Curves", use_container_width=True)
     if os.path.exists(os.path.join(PLOTS_DIR, "pr_curves.png")):
-        p3.image(os.path.join(PLOTS_DIR, "pr_curves.png"), caption="Precision-Recall Curves")
+        p3.image(os.path.join(PLOTS_DIR, "pr_curves.png"), caption="Precision-Recall Curves", use_container_width=True)
 
 def page_lookup(alerts, X_test):
     st.title("🔍 Account Risk Lookup")
