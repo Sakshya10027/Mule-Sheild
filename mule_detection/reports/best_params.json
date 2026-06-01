@@ -1,0 +1,1 @@
+{"XGBoost": {"n_estimators": 507, "max_depth": 10, "learning_rate": 0.23298336596497593, "subsample": 0.7163743815554222, "colsample_bytree": 0.8753164998049338, "scale_pos_weight": 68.10209512056139}, "LightGBM": {"n_estimators": 806, "max_depth": 1, "num_leaves": 49, "learning_rate": 0.14235886170244696}}
