@@ -28,6 +28,16 @@ st.markdown("""
         padding: 15px;
         border-radius: 10px;
         box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        border: 1px solid #e0e0e0;
+    }
+    [data-testid="stMetricValue"] {
+        color: #0A1628 !important;
+    }
+    [data-testid="stMetricLabel"] {
+        color: #4a4a4a !important;
+    }
+    [data-testid="stMetricDelta"] {
+        color: #2ca02c !important;
     }
     .sidebar .sidebar-content {
         background-color: #0A1628;
