@@ -170,9 +170,18 @@ def page_lookup(alerts, X_test):
             features = row['top_3_shap_features'].split(", ")
             values = [float(v) for v in row['top_3_shap_values'].split(", ")]
             
+            # Determine bar color based on risk category
+            bar_color = '#FFD700' # Default Gold
+            if row['risk_category'] == 'HIGH RISK':
+                bar_color = '#d62728' # Red
+            elif row['risk_category'] == 'MEDIUM RISK':
+                bar_color = '#ff7f0e' # Orange
+            
             fig_bar = px.bar(x=values, y=features, orientation='h', 
-                            labels={'x': 'SHAP Value', 'y': 'Feature'},
-                            color=values, color_discrete_sequence=['#FFD700'])
+                            labels={'x': 'SHAP Value', 'y': 'Feature'})
+            
+            fig_bar.update_traces(marker_color=bar_color)
+            
             fig_bar.update_layout(
                 plot_bgcolor='rgba(0,0,0,0)',
                 paper_bgcolor='rgba(0,0,0,0)',
