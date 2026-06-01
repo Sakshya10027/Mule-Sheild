@@ -69,7 +69,7 @@ def sidebar_navigation():
         "📈 Feature Insights",
         "🤖 Model Intelligence",
         "📖 About This System"
-    ])
+    ], key="nav_radio")
     return page
 
 def page_overview(alerts):
@@ -132,7 +132,12 @@ def page_overview(alerts):
 def page_lookup(alerts, X_test):
     st.title("🔍 Account Risk Lookup")
     
-    acc_id = st.number_input("Enter Account ID (Index)", min_value=0, max_value=len(alerts)-1, value=0)
+    # Show High Risk accounts as suggestions
+    with st.expander("💡 View High Risk Account IDs for analysis", expanded=True):
+        high_risk_list = alerts[alerts['risk_category'] == 'HIGH RISK'][['account_id', 'risk_score', 'recommended_action']]
+        st.dataframe(high_risk_list.style.map(lambda x: 'background-color: #ffcccc', subset=['risk_score']), width='stretch')
+    
+    acc_id = st.number_input("Enter Account ID (Index) from the table above", min_value=0, max_value=len(alerts)-1, value=0)
     
     if st.button("Analyze Account"):
         row = alerts.iloc[acc_id]
