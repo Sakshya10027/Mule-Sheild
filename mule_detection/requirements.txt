@@ -1,0 +1,19 @@
+# MuleShield AI — Requirements
+# Install with: pip install -r requirements.txt
+# Generated: Step 6 packaging
+
+pandas==2.2.2
+numpy==1.26.4
+scikit_learn==1.4.2
+xgboost==2.0.3
+lightgbm==4.3.0
+catboost==1.2.5
+optuna==3.6.1
+shap==0.45.0
+imbalanced_learn==0.12.2
+streamlit==1.35.0
+plotly==5.22.0
+matplotlib==3.8.4
+seaborn==0.13.2
+joblib==1.4.2
+scipy==1.13.0

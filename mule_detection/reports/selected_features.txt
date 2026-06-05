@@ -1,0 +1,193 @@
+Total features selected: 158
+
+TOP FEATURE IMPORTANCES (from LightGBM quick fit):
+  Unnamed__0: 650
+  F3912: 249
+  F3805: 75
+  F1596: 72
+  F1921: 68
+  F13: 64
+  F2344: 49
+  F3829: 40
+  F1644: 38
+  F3804: 32
+  F112: 30
+  F1647: 21
+  F421: 20
+  F3537: 20
+  F3534: 18
+  F14: 18
+  F2137: 18
+  F15: 17
+  F2447: 16
+  F109: 15
+  F2340: 15
+  F3830: 14
+  F319: 13
+  F3485: 13
+  F3820: 12
+  F460: 12
+  F2999: 12
+  F162: 11
+  F2031: 11
+  F2339: 11
+
+FINAL FEATURE LIST:
+  Unnamed__0
+  F3912
+  F3805
+  F1596
+  F1921
+  F13
+  F2344
+  F3829
+  F1644
+  F3804
+  F112
+  F1647
+  F421
+  F3537
+  F3534
+  F14
+  F2137
+  F15
+  F2447
+  F109
+  F2340
+  F3830
+  F319
+  F3485
+  F3820
+  F460
+  F2999
+  F162
+  F2031
+  F2339
+  F3819
+  hint_skew
+  F17
+  F2637
+  F16
+  F997
+  F3823
+  F24
+  F3799
+  F422
+  F20
+  F59
+  F3831
+  F2342
+  F323
+  F269
+  F56
+  F115
+  F3487
+  F2185
+  F322
+  F3492
+  F463
+  F3816
+  F2486
+  isolation_anomaly_score
+  F2639
+  F425
+  F328
+  F62
+  F1165
+  F2439
+  F3836_x_F3887
+  F318
+  F22
+  F1960
+  F2785
+  F54
+  F2676
+  F423
+  F1926
+  F23
+  F2675
+  F321
+  F320
+  F18
+  F19
+  F61
+  F60
+  F270
+  F950
+  F3825
+  F573
+  F3832
+  F2036
+  F362
+  F476
+  F578
+  F3824
+  F3491
+  F3898
+  F222
+  F111
+  F157
+  F110
+  F3815
+  F159
+  F160
+  F1863
+  F3645
+  F527
+  F531
+  F670
+  F1692
+  F2082
+  F2122
+  F2582
+  F2678
+  F2737
+  F2956
+  F3043
+  F3836
+  F3887
+  F3889
+  F3891
+  F3894
+  debit_credit_ratio
+  high_value_ratio
+  freq_amount_ratio
+  transfer_ratio
+  hint_sum
+  hint_mean
+  hint_std
+  hint_max
+  hint_min
+  hint_range
+  F115_x_F321
+  F527_x_F670
+  F2082_x_F2678
+  F531_log
+  F670_log
+  F1692_log
+  F2082_log
+  F2122_log
+  F2582_log
+  F2678_log
+  F2737_log
+  F2956_log
+  F3043_log
+  F3836_log
+  F3887_log
+  F115_pct_rank
+  F321_pct_rank
+  F527_pct_rank
+  F531_pct_rank
+  F670_pct_rank
+  F1692_pct_rank
+  F2082_pct_rank
+  F2122_pct_rank
+  F2582_pct_rank
+  F2678_pct_rank
+  F2737_pct_rank
+  F2956_pct_rank
+  F3043_pct_rank
+  F3836_pct_rank
+  F3887_pct_rank
+  F3894_pct_rank
+  is_anomaly

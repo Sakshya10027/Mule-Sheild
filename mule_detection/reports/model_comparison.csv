@@ -1,0 +1,10 @@
+model,roc_auc,pr_auc,f1_macro,f1_weighted,precision,recall,train_time
+XGBoost,1.0,1.0,1.0,1.0,1.0,1.0,1.9
+LightGBM,1.0,1.0,1.0,1.0,1.0,1.0,0.6
+RandomForest,1.0,1.0,1.0,1.0,1.0,1.0,3.0
+CatBoost,1.0,1.0,1.0,1.0,1.0,1.0,1.2
+LogisticRegression,1.0,1.0,0.9567260747032906,0.9984189989440025,0.8421052631578947,1.0,10.0
+XGBoost_Tuned,1.0,1.0,1.0,1.0,1.0,1.0,
+LightGBM_Tuned,1.0,1.0,1.0,1.0,1.0,1.0,
+StackingEnsemble,1.0,1.0,1.0,1.0,1.0,1.0,
+VotingEnsemble,1.0,1.0,1.0,1.0,1.0,1.0,

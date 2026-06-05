@@ -1,0 +1,6 @@
+DataSet.csv
+catboost_info/
+__pycache__/
+*.pyc
+.env
+.DS_Store
