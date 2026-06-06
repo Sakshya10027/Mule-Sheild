@@ -5,7 +5,7 @@
 
 ## 📌 Problem Statement
 
-Banks face growing cyber-enabled financial fraud through **mule accounts** — accounts used to receive,
+Banks face growing cyber-enabled financial fraud through **mule accounts**  accounts used to receive,
 transfer, and conceal fraudulent funds. Traditional rule-based systems fail to detect evolving fraud
 patterns in real time. This project builds a production-grade AI/ML system to classify suspicious mule
 accounts with high accuracy, full explainability, and intelligent alert generation.
@@ -82,14 +82,14 @@ accounts with high accuracy, full explainability, and intelligent alert generati
                             ▼
 ┌─────────────────────────────────────────────────────────────┐
 │              STEP 3: Model Building & Ensemble              │
-│  ┌──────────┐ ┌──────────┐ ┌────────┐ ┌─────────┐ ┌────┐  │
-│  │ XGBoost  │ │ LightGBM │ │  RFC   │ │CatBoost │ │ LR │  │
-│  └────┬─────┘ └────┬─────┘ └───┬────┘ └────┬────┘ └─┬──┘  │
-│       └────────────┴───────────┴────────────┴─────────┘    │
+│  ┌──────────┐ ┌──────────┐ ┌────────┐ ┌─────────┐ ┌────┐    │
+│  │ XGBoost  │ │ LightGBM │ │  RFC   │ │CatBoost │ │ LR │    │
+│  └────┬─────┘ └────┬─────┘ └───┬────┘ └────┬────┘ └─┬──┘    │
+│       └────────────┴───────────┴────────────┴─────────┘     │
 │                              │                              │
-│                    ┌─────────▼─────────┐                   │
+│                    ┌─────────▼─────────┐                    │
 │                    │ Stacking + Voting  │                   │
-│                    └─────────┬─────────┘                   │
+│                    └─────────┬─────────┘                    │
 └──────────────────────────────┼──────────────────────────────┘
                                │
                                ▼
